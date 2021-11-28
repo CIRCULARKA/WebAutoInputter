@@ -14,7 +14,7 @@ try
     var site = Console.ReadLine();
 
     try { driver.Navigate().GoToUrl(site); }
-    catch{ throw new Exception("Unable to load a site with specified URL. Check URL correctness or internet connection."); }
+    catch { throw new Exception("Unable to load a site with specified URL. Check URL correctness or internet connection."); }
 
     Console.Write("\nIs there a button on the same page you want to click to get desired input box?" +
         "\nIf yes, input its XPath (e.g. \"/html/body/div[13]/div/span[1]\").\n" +
